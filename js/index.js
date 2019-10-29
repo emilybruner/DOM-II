@@ -33,8 +33,9 @@ window.addEventListener("resize", () => {
     mainStuff.style.color = "white";
 })
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", (event) => {
     mainStuff.style.backgroundColor = "hotpink";
+    event.stopPropagation();
 })
 window.addEventListener("wheel", () => {
     mainStuff.style.color = "yellow";
