@@ -39,3 +39,25 @@ window.addEventListener("scroll", () => {
 window.addEventListener("wheel", () => {
     mainStuff.style.color = "yellow";
 })
+
+document.querySelectorAll(".text-content").forEach(el => {
+    document.addEventListener("keydown", event => {
+        if (event.isComposing || event.keyCode === 229) {
+            return;
+        }
+        el.style.transform = "rotate(360deg)";
+        el.style.transition = "all 1s ease-in-out";
+    });
+
+}); ``
+
+const breakImg = document.querySelector('.destinationimg')
+breakImg.addEventListener("load", () => {
+    breakImg.style.transform = "skewX(20deg)";
+})
+
+const stopLink = document.querySelector(".nav-link");
+
+stopLink.addEventListener("click", (event) => {
+    event.preventDefault();
+})
