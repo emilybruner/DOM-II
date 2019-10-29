@@ -32,3 +32,10 @@ window.addEventListener("resize", () => {
     mainStuff.style.backgroundColor = "navy";
     mainStuff.style.color = "white";
 })
+
+window.addEventListener("scroll", () => {
+    mainStuff.style.backgroundColor = "hotpink";
+})
+window.addEventListener("wheel", () => {
+    mainStuff.style.color = "yellow";
+})
